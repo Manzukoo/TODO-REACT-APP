@@ -1,8 +1,8 @@
 import React from "react";
 import './Task.css'
 
-const Task = ({ children }) => (
-	<li>
+const Task = ({ completed, children }) => (
+	<li className={`task ${completed ? 'completed' : ''}`.trimEnd()}>
 		{children}
   </li>
 )

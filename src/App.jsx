@@ -7,9 +7,12 @@ function App() {
     <div className="App">
       <div className="todo-container">
         <ul className="tasks">
-          <Task>Prueba1</Task>
-          <Task>Prueba2</Task>
-          <Task>Prueba3</Task>
+          <Task
+            completed={true}>Prueba1</Task>
+          <Task
+            completed={false}>Prueba2</Task>
+          <Task
+          completed={false}>Prueba3</Task>
         </ul>
         <div className="buttons">
         <Boton
