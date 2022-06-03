@@ -3,7 +3,9 @@ import './Task.css'
 
 const Task = ({ completed, children }) => (
 	<li className={`task ${completed ? 'completed' : ''}`.trimEnd()}>
-		{children}
+		<p className="text-of-task">
+			{children}
+		</p>
 		<div className="delete-task">
 			Eliminar
 		</div>
