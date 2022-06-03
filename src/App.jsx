@@ -5,7 +5,7 @@ import Task from './components/Task';
 function App() {
   return (
     <div className="App">
-      <input type="text" placeholder='Nueva Tarea'>
+      <input type="text" className='input-new-task' placeholder='Nueva Tarea'>
         
       </input>
       <div className="todo-container">
