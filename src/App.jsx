@@ -1,5 +1,5 @@
 import './App.css';
-import Boton from './components/Boton';
+import Button from './components/Button';
 import Task from './components/Task';
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
           completed={false}>Prueba3</Task>
         </ul>
         <div className="buttons">
-        <Boton
+        <Button
         btnName="Agregar" />
-        <Boton
+        <Button
         btnName="Reiniciar" />
       </div>
       </div>

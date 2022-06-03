@@ -1,10 +1,10 @@
 import React from "react";
-import './Boton.css'
+import './Button.css'
 
-const Boton = ({ btnName }) => (
+const Button = ({ btnName }) => (
 	<div className="btn-container">
 		<input type="button" className="btn" value={btnName}></input>
 	</div>
 )
 
-export default Boton
+export default Button
