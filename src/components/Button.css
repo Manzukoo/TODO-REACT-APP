@@ -1,0 +1,20 @@
+.btn-container {
+    margin: 0 50px;
+}
+
+.btn {
+    padding: 15px 18px;
+    background: #282424d0;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform .2s;
+    color: white;
+    box-shadow: 2px 2px 15px -5px rgba(0, 0, 0, 0.438);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #282424e0;
+    box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.495);
+}
