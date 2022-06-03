@@ -14,12 +14,12 @@ function App() {
           <Task
           completed={false}>Prueba3</Task>
         </ul>
-        <div className="buttons">
+      </div>
+      <div className="buttons">
         <Button
         btnName="Agregar" />
         <Button
         btnName="Reiniciar" />
-      </div>
       </div>
     </div>
   );
