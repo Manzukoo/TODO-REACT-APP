@@ -3,18 +3,19 @@
 }
 
 .btn {
-    padding: 15px 18px;
-    background: #282424d0;
+    padding: 22px 25px;
+    background: #211e1ed0;
     border: 0;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
     transition: transform .2s;
     color: white;
     box-shadow: 2px 2px 15px -5px rgba(0, 0, 0, 0.438);
+    font-weight: bold;
 }
 
 .btn:hover {
     transform: scale(1.1);
-    background: #282424e0;
+    background: rgba(26, 23, 23, 0.878);
     box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.495);
 }
