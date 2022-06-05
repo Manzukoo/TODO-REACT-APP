@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './InputTask.css'
+import {v4 as uuidv4} from 'uuid'
 
 const InputTask = () => {
 
@@ -12,8 +13,9 @@ const InputTask = () => {
     const handleShipping = (e) => {
         e.preventDefault()
         const newTask = {
-            id: '1234',
-            text: input
+            id: uuidv4(),
+            text: input,
+            completed: false
         }
     }
 
