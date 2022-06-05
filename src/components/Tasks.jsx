@@ -21,6 +21,16 @@ const Tasks = () => {
     setTasks(newTasks)
   }
 
+  const completeTask = (id) => {
+    const newTasks = tasks.map(task => {
+      if(task.id === id) {
+        task.completed = !task.completed
+      }
+      return task
+    });
+    setTasks(newTasks)
+  }
+
   return (
     <>
       <InputTask onSubmit={addTask} />
@@ -32,7 +42,8 @@ const Tasks = () => {
                 key={task.id}
                 id={task.id}
                 completed={task.completed}
-                deleteTask={() => deleteTask(task.id)}> {task.text} </Task>
+                deleteTask={() => deleteTask(task.id)}
+                completeTask={() => completeTask(task.id)}> {task.text} </Task>
             )
           }
         </ul>
