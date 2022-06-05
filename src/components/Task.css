@@ -7,6 +7,7 @@
     padding: 8px 15px 8px 20px;
     border: 1.9px solid white;
     align-items: center;
+    position: relative;
 }
 
 .task:nth-child(even) {
@@ -41,10 +42,19 @@
     color: rgb(97, 17, 17);
     cursor: pointer;
     transition: color .2s, transform .35s;
+    z-index: 50;
 }
 
 .delete-task:hover {
     transition: color .2s, transform .7s;
     color: rgb(172, 19, 19);
     transform: rotate(90deg);
+}
+
+.completeTask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
