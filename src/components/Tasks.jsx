@@ -23,8 +23,10 @@ const Tasks = () => {
         <ul className="tasks">
           {
             tasks.map((task) =>
-              <Task completed={task.completed}> {task.text} </Task>
-
+              <Task
+                key={task.id}
+                id={task.id}
+                completed={task.completed}> {task.text} </Task>
             )
           }
         </ul>
