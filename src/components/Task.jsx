@@ -1,5 +1,6 @@
 import React from "react";
 import './Task.css'
+import { AiOutlineCloseSquare } from 'react-icons/ai';
 
 const Task = ({ completed, children }) => (
 	<li className={`task ${completed ? 'completed' : ''}`.trimEnd()}>
@@ -7,7 +8,7 @@ const Task = ({ completed, children }) => (
 			{children}
 		</p>
 		<div className="delete-task">
-			Eliminar
+			<AiOutlineCloseSquare className="delete-task" />
 		</div>
   </li>
 )
