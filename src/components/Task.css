@@ -43,6 +43,7 @@
     cursor: pointer;
     transition: color .2s, transform .35s;
     z-index: 50;
+    background: #ff00000e;
 }
 
 .delete-task:hover {
@@ -57,4 +58,20 @@
     height: 100%;
     left: 0;
     top: 0;
+}
+
+.task.completed {
+    background: #0000002b;
+    position: relative;
+}
+
+.task.completed::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 87%;
+    height: 5px;
+    background: black;
+    left: 3.9%;
+    z-index: 1;
 }
