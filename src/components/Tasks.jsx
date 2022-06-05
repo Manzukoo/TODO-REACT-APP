@@ -7,6 +7,10 @@ const Tasks = () => {
   
   const [tasks, setTasks] = useState([])
 
+  const addTask = (task) => {
+    console.log(`...`)
+  }
+
   return (
     <>
       <InputTask />
