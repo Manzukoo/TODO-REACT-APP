@@ -9,6 +9,7 @@ function App() {
           <Tasks />
         <div className="buttons">
           <Button
+          form={true}
           btnName="Agregar" />
           <Button
           btnName="Reiniciar" />

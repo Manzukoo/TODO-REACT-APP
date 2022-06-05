@@ -1,9 +1,9 @@
 import React from "react";
 import './Button.css'
 
-const Button = ({ btnName }) => (
+const Button = ({ form, btnName }) => (
 	<div className="btn-container">
-		<input type="button" className="btn" value={btnName}></input>
+		<input form={form ? 'formTask' : ''} type={form ? 'submit' : 'button'} className="btn" value={btnName}></input>
 	</div>
 )
 
