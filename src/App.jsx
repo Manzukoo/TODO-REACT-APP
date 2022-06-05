@@ -6,12 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <input type="text" className='input-new-task' placeholder='Nueva Tarea'>
-
-        </input>
-        <div className="todo-container">
           <Tasks />
-        </div>
         <div className="buttons">
           <Button
           btnName="Agregar" />
