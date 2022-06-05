@@ -3,11 +3,11 @@ import './Task.css'
 import { AiOutlineCloseSquare } from 'react-icons/ai';
 
 const Task = ({ id, completeTask, deleteTask, completed, children }) => (
-	<li className={`task ${completed ? 'completed' : ''}`.trimEnd()}>
+	<li onClick={() => completeTask(id)} className={`task ${completed ? 'completed' : ''}`.trimEnd()}>
 		<p className="text-of-task">
 			{children}
 		</p>
-		<div className="delete-task">
+		<div onClick={() => deleteTask(id)} className="delete-task">
 			<AiOutlineCloseSquare className="delete-task" />
 		</div>
   </li>
