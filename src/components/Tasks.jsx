@@ -8,12 +8,17 @@ const Tasks = () => {
   const [tasks, setTasks] = useState([])
 
   const addTask = (task) => {
-    console.log(`...`)
+    if(task.text.trim()) {
+      task.text = task.text.trim()
+      
+      const newTasks = [task, ...tasks]
+      setTasks(newTasks)
+    }
   }
 
   return (
     <>
-      <InputTask />
+      <InputTask onSubmit={addTask} />
       <div className="todo-container">
         <ul className="tasks">
           {
